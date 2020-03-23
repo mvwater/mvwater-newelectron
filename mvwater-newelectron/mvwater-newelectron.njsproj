@@ -1,0 +1,202 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>mvwater-newelectron</Name>
+    <RootNamespace>mvwater-newelectron</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>55742c4a-f4c6-4a7e-9350-3a29785b31cc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="node_modules\fsevents\node_modules\yallist\app.css">
+      <SubType>Content</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Content>
+    <Content Include="node_modules\fsevents\node_modules\yallist\query-browser.css">
+      <SubType>Content</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Content>
+    <Content Include="node_modules\fsevents\node_modules\yallist\sqlectron.gif">
+      <SubType>Content</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="scripts\.eslintrc" />
+    <Content Include="scripts\dev-auto-restart.js" />
+    <Content Include="scripts\link-sqlectron-core.sh" />
+    <Content Include="src\browser\.eslintrc" />
+    <Content Include="src\browser\app.js" />
+    <Content Include="src\browser\config.js" />
+    <Content Include="src\browser\logger.js" />
+    <Content Include="src\browser\main.js" />
+    <Content Include="src\browser\menu\darwin.js" />
+    <Content Include="src\browser\menu\index.js" />
+    <Content Include="src\browser\menu\linux.js" />
+    <Content Include="src\browser\menu\win32.js" />
+    <Content Include="src\browser\preload.js" />
+    <Content Include="src\browser\remote.js" />
+    <Content Include="src\browser\update-checker.js" />
+    <Content Include="src\browser\window.js" />
+    <Content Include="src\renderer\.eslintrc" />
+    <Content Include="src\renderer\actions\columns.js" />
+    <Content Include="src\renderer\actions\config.js" />
+    <Content Include="src\renderer\actions\connections.js" />
+    <Content Include="src\renderer\actions\databases.js" />
+    <Content Include="src\renderer\actions\indexes.js" />
+    <Content Include="src\renderer\actions\keys.js" />
+    <Content Include="src\renderer\actions\queries.js" />
+    <Content Include="src\renderer\actions\routines.js" />
+    <Content Include="src\renderer\actions\schemas.js" />
+    <Content Include="src\renderer\actions\servers.js" />
+    <Content Include="src\renderer\actions\sqlscripts.js" />
+    <Content Include="src\renderer\actions\tables.js" />
+    <Content Include="src\renderer\actions\triggers.js" />
+    <Content Include="src\renderer\actions\views.js" />
+    <Content Include="src\renderer\components\checkbox.jsx" />
+    <Content Include="src\renderer\components\collapse-icon.jsx" />
+    <Content Include="src\renderer\components\confim-modal.jsx" />
+    <Content Include="src\renderer\components\database-diagram-modal.jsx" />
+    <Content Include="src\renderer\components\database-diagram.css" />
+    <Content Include="src\renderer\components\database-diagram.jsx" />
+    <Content Include="src\renderer\components\database-filter.jsx" />
+    <Content Include="src\renderer\components\database-item.jsx" />
+    <Content Include="src\renderer\components\database-list-item-metadata.jsx" />
+    <Content Include="src\renderer\components\database-list-item.jsx" />
+    <Content Include="src\renderer\components\database-list.jsx" />
+    <Content Include="src\renderer\components\footer.jsx" />
+    <Content Include="src\renderer\components\header.css" />
+    <Content Include="src\renderer\components\header.jsx" />
+    <Content Include="src\renderer\components\jointjs-diagram-table-cell.js" />
+    <Content Include="src\renderer\components\jointjs-diagram-table.js" />
+    <Content Include="src\renderer\components\loader.jsx" />
+    <Content Include="src\renderer\components\log-status.jsx" />
+    <Content Include="src\renderer\components\logo-128px.png" />
+    <Content Include="src\renderer\components\message.jsx" />
+    <Content Include="src\renderer\components\override-ace.css" />
+    <Content Include="src\renderer\components\override-select.css" />
+    <Content Include="src\renderer\components\preview-modal.jsx" />
+    <Content Include="src\renderer\components\prompt-modal.jsx" />
+    <Content Include="src\renderer\components\query-result-table-cell.jsx" />
+    <Content Include="src\renderer\components\query-result-table.jsx" />
+    <Content Include="src\renderer\components\query-result-table.scss" />
+    <Content Include="src\renderer\components\query-result.jsx" />
+    <Content Include="src\renderer\components\query.jsx" />
+    <Content Include="src\renderer\components\react-resizable.css" />
+    <Content Include="src\renderer\components\react-tabs.scss" />
+    <Content Include="src\renderer\components\require-context.js" />
+    <Content Include="src\renderer\components\server-db-client-cassandra.png" />
+    <Content Include="src\renderer\components\server-db-client-info-modal.jsx" />
+    <Content Include="src\renderer\components\server-db-client-mysql.png" />
+    <Content Include="src\renderer\components\server-db-client-postgresql.png" />
+    <Content Include="src\renderer\components\server-db-client-sqlite.png" />
+    <Content Include="src\renderer\components\server-db-client-sqlserver.png" />
+    <Content Include="src\renderer\components\server-filter.jsx" />
+    <Content Include="src\renderer\components\server-list-card.jsx" />
+    <Content Include="src\renderer\components\server-list-item.jsx" />
+    <Content Include="src\renderer\components\server-list.jsx" />
+    <Content Include="src\renderer\components\server-list.scss" />
+    <Content Include="src\renderer\components\server-modal-form.jsx" />
+    <Content Include="src\renderer\components\settings-modal-form.jsx" />
+    <Content Include="src\renderer\components\table-submenu.jsx" />
+    <Content Include="src\renderer\components\update-checker.jsx" />
+    <Content Include="src\renderer\components\_breakpoint.scss" />
+    <Content Include="src\renderer\entry.jsx" />
+    <Content Include="src\renderer\index.html" />
+    <Content Include="src\renderer\menu-handler.js" />
+    <Content Include="src\renderer\reducers\columns.js" />
+    <Content Include="src\renderer\reducers\config.js" />
+    <Content Include="src\renderer\reducers\connections.js" />
+    <Content Include="src\renderer\reducers\databases.js" />
+    <Content Include="src\renderer\reducers\index.js" />
+    <Content Include="src\renderer\reducers\indexes.js" />
+    <Content Include="src\renderer\reducers\keys.js" />
+    <Content Include="src\renderer\reducers\queries.js" />
+    <Content Include="src\renderer\reducers\routines.js" />
+    <Content Include="src\renderer\reducers\schemas.js" />
+    <Content Include="src\renderer\reducers\servers.js" />
+    <Content Include="src\renderer\reducers\sqlscripts.js" />
+    <Content Include="src\renderer\reducers\status.js" />
+    <Content Include="src\renderer\reducers\tables.js" />
+    <Content Include="src\renderer\reducers\triggers.js" />
+    <Content Include="src\renderer\reducers\views.js" />
+    <Content Include="src\renderer\store\configure.js" />
+    <Content Include="src\renderer\utils\convert.js" />
+    <Content Include="src\renderer\utils\file-handler.js" />
+    <Content Include="src\renderer\utils\wait.js" />
+    <Content Include="vendor\renderer\lato\fonts\Lato-Regular.eot" />
+    <Content Include="vendor\renderer\lato\fonts\Lato-Regular.ttf" />
+    <Content Include="vendor\renderer\lato\fonts\Lato-Regular.woff" />
+    <Content Include="vendor\renderer\lato\fonts\Lato-Regular.woff2" />
+    <Content Include="vendor\renderer\lato\latofonts.css" />
+    <Content Include="vendor\renderer\semantic-ui\README.md" />
+    <Content Include="vendor\renderer\semantic-ui\semantic.css" />
+    <Content Include="vendor\renderer\semantic-ui\semantic.js" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.eot" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.otf" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.svg" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.woff" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="vendor\renderer\semantic-ui\themes\default\assets\images\flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scripts\" />
+    <Folder Include="src\" />
+    <Folder Include="src\browser\" />
+    <Folder Include="src\browser\menu\" />
+    <Folder Include="src\renderer\" />
+    <Folder Include="src\renderer\actions\" />
+    <Folder Include="src\renderer\components\" />
+    <Folder Include="src\renderer\containers\" />
+    <Folder Include="src\renderer\reducers\" />
+    <Folder Include="src\renderer\store\" />
+    <Folder Include="src\renderer\utils\" />
+    <Folder Include="vendor\" />
+    <Folder Include="vendor\renderer\" />
+    <Folder Include="vendor\renderer\lato\" />
+    <Folder Include="vendor\renderer\lato\fonts\" />
+    <Folder Include="vendor\renderer\semantic-ui\" />
+    <Folder Include="vendor\renderer\semantic-ui\themes\" />
+    <Folder Include="vendor\renderer\semantic-ui\themes\default\" />
+    <Folder Include="vendor\renderer\semantic-ui\themes\default\assets\" />
+    <Folder Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\" />
+    <Folder Include="vendor\renderer\semantic-ui\themes\default\assets\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="node_modules\fsevents\node_modules\yallist\app.jsx">
+      <SubType>Code</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Compile>
+    <Compile Include="node_modules\fsevents\node_modules\yallist\query-browser.jsx">
+      <SubType>Code</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Compile>
+    <Compile Include="node_modules\fsevents\node_modules\yallist\server-management.jsx">
+      <SubType>Code</SubType>
+      <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>
