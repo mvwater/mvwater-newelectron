@@ -106,7 +106,7 @@
     "denodeify": "^1.2.1",
     "electron": "^1.7.9",
     "electron-builder": "^20.44.4",
-    "eslint": "^2.13.1",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.16.0",
