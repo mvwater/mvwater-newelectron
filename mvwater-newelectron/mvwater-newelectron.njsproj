@@ -162,6 +162,10 @@
     <Content Include="vendor\renderer\semantic-ui\themes\default\assets\images\flags.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="node_modules\" />
+    <Folder Include="node_modules\fsevents\" />
+    <Folder Include="node_modules\fsevents\node_modules\" />
+    <Folder Include="node_modules\fsevents\node_modules\yallist\" />
     <Folder Include="scripts\" />
     <Folder Include="src\" />
     <Folder Include="src\browser\" />
