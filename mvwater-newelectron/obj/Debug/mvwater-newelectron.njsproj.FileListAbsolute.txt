@@ -1,0 +1,3 @@
+C:\Users\skim2\Documents\mvwater-newelectron\mvwater-newelectron\obj\Debug\mvwater-newelectron.njsprojAssemblyReference.cache
+C:\Users\skim2\Documents\mvwater-newelectron\mvwater-newelectron\obj\Debug\mvwater-newelectron.njsproj.CoreCompileInputs.cache
+C:\Users\skim2\Documents\mvwater-newelectron\mvwater-newelectron\bin\Microsoft.NodejsTools.WebRole.dll

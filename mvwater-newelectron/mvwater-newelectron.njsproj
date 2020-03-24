@@ -4,6 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>mvwater-newelectron</Name>
     <RootNamespace>mvwater-newelectron</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -11,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>55742c4a-f4c6-4a7e-9350-3a29785b31cc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>src\browser\app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -19,7 +20,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <StartWebBrowser>false</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="empty-shim.js" />
     <Content Include="node_modules\fsevents\node_modules\yallist\app.css">
       <SubType>Content</SubType>
       <DependentUpon>C:\Users\skim2\source\repos\mvwater-newelectron\mvwater-newelectron\node_modules\fsevents\node_modules\yallist\yallist.js</DependentUpon>
@@ -160,6 +162,8 @@
     <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.woff" />
     <Content Include="vendor\renderer\semantic-ui\themes\default\assets\fonts\icons.woff2" />
     <Content Include="vendor\renderer\semantic-ui\themes\default\assets\images\flags.png" />
+    <Content Include="webpack.dev.config.js" />
+    <Content Include="webpack.prod.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="node_modules\" />
