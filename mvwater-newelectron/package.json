@@ -129,7 +129,7 @@
     "lodash.template": "^4.5.0",
     "lodash.trim": "^4.5.1",
     "lodash.union": "^4.6.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-sass": "^4.13.1",
     "react": "^15.6.2",
     "react-ace": "^3.7.0",
